@@ -25,7 +25,7 @@
     - "{{ prometheus_bind_exporter_config_path }}"
     - "{{ prometheus_bind_exporter_subdir }}"
 
-- name: download and untar bind_exporter tarball
+- name: download bind_exporter binary
   get_url:
     url: "{{ prometheus_bind_exporter_url }}"
     dest: "{{ prometheus_bind_exporter_subdir }}/bind_exporter"
